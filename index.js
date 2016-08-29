@@ -1,6 +1,5 @@
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
-const p = document.querySelector('p')
 
 const _w = canvas.width = 800
 const _h = canvas.height = 500

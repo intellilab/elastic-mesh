@@ -32,7 +32,7 @@ function Dot(row, col) {
     this.sy  = this.y
     this.ax  = 0
     this.ay  = 0
-    this.rate = .06      // a = f/m = kx/m = rate * x
+    this.rate = .3      // a = f/m = kx/m = rate * x
     this.damping = .3    // 阻尼系数
 }
 
@@ -81,6 +81,7 @@ for (let j = 0; j <= rows; j++)
 const draw = () => {
     ctx.clearRect(0, 0, _w, _h)
     ctx.strokeStyle = 'green'
+    ctx.lineWidth = .8
     for (let i = 0; i < dots.length; i++) {
         if (i % (cols + 1) == cols) continue
         dots[i].throb()

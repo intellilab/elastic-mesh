@@ -14,6 +14,13 @@ const mouse = {
     y: 0
 }
 
+/*
+* 偏移 .5px
+* 为了更好的绘制线条：https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+*/
+
+ctx.translate(.5, .5)
+
 function Dot(row, col) {
     this.row = row
     this.col = col

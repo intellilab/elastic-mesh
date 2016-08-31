@@ -32,7 +32,7 @@ function Dot(row, col) {
     this.sy  = this.y
     this.ax  = 0
     this.ay  = 0
-    this.rate = .3      // a = f/m = kx/m = rate * x
+    this.rate = .3       // a = f/m = kx/m = rate * x
     this.damping = .3    // 阻尼系数
 }
 
@@ -43,7 +43,7 @@ Dot.prototype = {
         if (this.col == 0 || this.col == cols) return
 
         let up, down, left, right,
-            cx, cy, mAx, mAy
+            cx, cy
 
         up = dots[(this.row - 1) * (cols + 1) + this.col]
         down = dots[(this.row + 1) * (cols + 1) + this.col]
